@@ -15,16 +15,13 @@ class VisualizationEngine:
         df = pd.DataFrame(self.result)
 
         # Fayda-risk grafiği (Suppression ve NCP'ye göre yapıldı.)
-        plt.figure(figsize=(10,6))
-        sns.scatterplot(
-            data = df,
-            x="suppression_rate",
-            y="ncp",
-            size="score",
-            hue="score",
-            palette="viridis",
-            sizes=(50,200),
-        )
+        plt.scatter(
+            df["suppression_rate"],
+            df["ncp"],
+            color="black",
+            alpha=0.5,
+            label = "Diğer Durumlar"
+        )   
 
         # En iyi sonucu işaretle
         best_result = df.loc[df["score"].idxmax()]

@@ -12,6 +12,7 @@ class OptimizationEngine:
         best_score = float('-inf')  # Başlangıç için en düşük skor
         best_result = None
 
+        #  Ağırlıklı Skorlama Modelleri
         # Ağırlıklar: Literatürden önerilen değerler
         weights = {
             "k": 0.3,  # k-Anonimlik ağırlığı
