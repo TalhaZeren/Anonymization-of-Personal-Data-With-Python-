@@ -1,19 +1,19 @@
+# main.py
 from AnonymizationPipeline import AnonymizationPipeline
-from DataProcessor import DataProcessor
 from OptimizationEngine import OptimizationEngine
 from DataLossAnalyzer import DataLossAnalyzer
 from AnonymityAnalyzer import AnonymityAnalyzer
 from VisualizationEngine import VisualizationEngine
 import time
+import pandas as pd
 
 def main():
-    start = time.time()    
-    data_path = "examples/data/adult_100.csv"
-    hierarchy_folder = "examples/hierarchies"
+    start = time.time()
+    data_path = "examples/data/adult_100.csv"  # Veri dosyanızın yolu
     
     # Identifiers, Quasi-Identifiers ve Sensitive Attribute
     identifiers = ["race"]  # "race" sütunu identifiers olarak tanımlandı
-    quasi_identifiers = ["age", "education", "marital-status", "occupation", "sex", "native-country"]
+    quasi_identifiers = ["age", "education", "marital-status", "occupation", "sex", "native-country", "workclass"]
     sensitive_attribute = "salary"
     
     # k, l, t değerlerinin denenecek kombinasyonları
@@ -25,7 +25,7 @@ def main():
 
     try:
         # Pipeline oluştur
-        pipeline = AnonymizationPipeline(data_path, hierarchy_folder)
+        pipeline = AnonymizationPipeline(data_path)
 
         # Kombinasyonları denemek için bir döngü başlat
         for k in k_values:
@@ -41,20 +41,20 @@ def main():
                             k=k, 
                             l=l, 
                             t=t, 
-                            suppression_level=50
+                            suppression_level=50  # Baskılama seviyesi (örneğin, %50)
                         )
 
                         # Anonimleştirilmiş veriyi kaydet
                         output_path = f"examples/data/anonymized_adult_k{k}_l{l}_t{t}_List.csv"
-                        pipeline.save_anoymized_data(anonymized_data, output_path)
+                        pipeline.save_anonymized_data(anonymized_data, output_path)
                         
                         # Anonimlik Analizi
                         print("\nAnonimlik Analizi Yapılıyor...")
                         analyzer = AnonymityAnalyzer(
-                            pipeline.processor.get_data(),
-                            anonymized_data,
-                            quasi_identifiers,
-                            sensitive_attribute
+                            original_data=pipeline.processor.get_data(),
+                            anonymized_data=anonymized_data,
+                            quasi_identifiers=quasi_identifiers,
+                            sensitive_attribute=sensitive_attribute
                         )
 
                         k_result = analyzer.calculate_k_anonymity()
@@ -68,8 +68,8 @@ def main():
                         # Bilgi Kaybı Analizi
                         print("\nBilgi Kaybı Analizi Yapılıyor...")
                         loss_analyzer = DataLossAnalyzer(
-                            pipeline.processor.get_data(),
-                            anonymized_data
+                            original_data=pipeline.processor.get_data(),
+                            anonymized_data=anonymized_data
                         )
                         suppression_rate = loss_analyzer.calculate_suppression_rate()
                         ncp = loss_analyzer.calculate_ncp()
@@ -86,7 +86,7 @@ def main():
         return
 
     # Optimizasyon
-    print("\n Optimizasyon başlatılıyor...")
+    print("\nOptimizasyon başlatılıyor...")
     try:
         optimizer = OptimizationEngine(pipeline.processor)
         best_result, all_results = optimizer.optimize(
@@ -108,16 +108,6 @@ def main():
         print(f"Optimizasyon sırasında hata oluştu: {e}")
         return
     
-    # Optimizasyon sonuçlarını alıyoruz. (OptimizationEngine'den gelen sonuçlar)
-    best_result,all_results = optimizer.optimize(
-        quasi_identifiers = quasi_identifiers,
-        sensitive_attribute = sensitive_attribute,
-        hierarchies = pipeline.processor.get_hierarchies(),
-        k_values=k_values,
-        l_values=l_values,
-        t_values=t_values
-    )
-
     # VisualizationEngine kullanarak sonuçları görselleştir.
     visualizer = VisualizationEngine(all_results)
 

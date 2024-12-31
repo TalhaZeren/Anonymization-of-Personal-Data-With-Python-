@@ -3,6 +3,7 @@ from DataLossAnalyzer import DataLossAnalyzer
 from AnonymityAnalyzer import AnonymityAnalyzer
 from Anonymizer import Anonymizer
 
+
 class OptimizationEngine:
     def __init__(self, data_processor):
         self.data_processor = data_processor

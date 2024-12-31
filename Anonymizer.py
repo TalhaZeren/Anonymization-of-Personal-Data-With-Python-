@@ -1,7 +1,7 @@
 from anjana.anonymity import k_anonymity, l_diversity, t_closeness
 
 class Anonymizer:
-    def __init__(self, data, hierarchies):
+    def __init__(self, data, hierarchies : dict):
         self.data = data
         self.hierarchies = hierarchies
 
