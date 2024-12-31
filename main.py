@@ -14,12 +14,12 @@ def main():
     # Identifiers, Quasi-Identifiers ve Sensitive Attribute
     identifiers = ["race"]  # "race" sütunu identifiers olarak tanımlandı
     quasi_identifiers = ["age", "education", "marital-status", "occupation", "sex", "native-country"]
-    sensitive_attribute = "salary-class"
+    sensitive_attribute = "salary"
     
     # k, l, t değerlerinin denenecek kombinasyonları
-    k_values = [10, 20]
-    l_values = [2, 2]
-    t_values = [0.5, 0.4]
+    k_values = [10]
+    l_values = [2]
+    t_values = [0.5]
 
     print("Anonimleştirme işlemi hattı başlıyor...")
 
@@ -41,7 +41,7 @@ def main():
                             k=k, 
                             l=l, 
                             t=t, 
-                            suppression_level=30
+                            suppression_level=50
                         )
 
                         # Anonimleştirilmiş veriyi kaydet

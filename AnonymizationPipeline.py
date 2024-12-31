@@ -16,7 +16,6 @@ class AnonymizationPipeline:
         data_k = anonymizer.apply_k_anonymity(identifiers, quasi_identifiers, k, suppression_level)
         data_l = anonymizer.apply_l_diversity(identifiers, quasi_identifiers, sensitive_attribute, k, l, suppression_level)
         data_t = anonymizer.apply_t_closeness(identifiers, quasi_identifiers, sensitive_attribute, k, t, suppression_level)
-
         return data_t
 
     def save_anoymized_data(self, data, output_path):
