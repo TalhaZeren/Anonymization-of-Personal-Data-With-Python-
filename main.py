@@ -8,7 +8,7 @@ import time
 
 def main():
     start = time.time()    
-    data_path = "examples/data/adult_100.csv"
+    data_path = "examples/data/adult_500.csv"
     hierarchy_folder = "examples/hierarchies"
     
     # Identifiers, Quasi-Identifiers ve Sensitive Attribute
@@ -17,9 +17,9 @@ def main():
     sensitive_attribute = "salary"
     
     # k, l, t değerlerinin denenecek kombinasyonları
-    k_values = [10]
+    k_values = [3,4,5,6,7,8,9,10,11,12,13,14,15]
     l_values = [2]
-    t_values = [0.5]
+    t_values = [0.2]
 
     print("Anonimleştirme işlemi hattı başlıyor...")
 
