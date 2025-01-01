@@ -11,6 +11,9 @@ class AnonymizationPipeline:
         # Hiyerarşileri yükleme
         self.processor.load_hierarchies(quasi_identifiers)
 
+        
+
+
         # Anonimleştirme işlemleri
         anonymizer = Anonymizer(self.processor.get_data(), self.processor.get_hierarchies())
         data_k = anonymizer.apply_k_anonymity(identifiers, quasi_identifiers, k, suppression_level)

@@ -13,7 +13,7 @@ def main():
     
     # Identifiers, Quasi-Identifiers ve Sensitive Attribute
     identifiers = ["race"]  # "race" sütunu identifiers olarak tanımlandı
-    quasi_identifiers = ["age", "education", "marital-status", "occupation", "sex", "native-country"]
+    quasi_identifiers = ["education", "marital-status", "occupation", "sex", "native-country"]
     sensitive_attribute = "salary"
     
     # k, l, t değerlerinin denenecek kombinasyonları
