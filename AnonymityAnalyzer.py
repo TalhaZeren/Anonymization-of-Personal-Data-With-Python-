@@ -16,8 +16,3 @@ class AnonymityAnalyzer:
 
     def calculate_t_closeness(self):
         return anonymity.t_closeness(self.anonymized_data, self.quasi_identifiers, [self.sensitive_attribute])
-
-    def calculate_generalization_levels(self, hierarchies):
-        original_transformation = get_transformation(self.original_data, self.quasi_identifiers, hierarchies)
-        anonymized_transformation = get_transformation(self.anonymized_data, self.quasi_identifiers, hierarchies)
-        return original_transformation, anonymized_transformation

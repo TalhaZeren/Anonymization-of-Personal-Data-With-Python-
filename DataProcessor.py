@@ -1,5 +1,4 @@
 import pandas as pd
-from anjana.anonymity.utils import generate_intervals
 
 class DataProcessor:
     def __init__(self, data_path, hierarchy_folder):
@@ -16,19 +15,12 @@ class DataProcessor:
     def load_hierarchies(self, quasi_identifiers):
         for qi in quasi_identifiers:
             hierarchy_file = f"{self.hierarchy_folder}/{qi}.csv"
-            print(hierarchy_file)
             try:
-                self.hierarchies[qi] = dict(pd.read_csv(hierarchy_file, header=None))
-
+                self.hierarchies[qi] = pd.read_csv(hierarchy_file, header=None, index_col=0).to_dict(orient='list')
             except FileNotFoundError:
-                raise FileNotFoundError(f"{qi} için hiyerarşi dosyası bulunamadı: {hierarchy_file}")
+                raise FileNotFoundError(f"Hiyerarşi dosyası bulunamadı: {hierarchy_file}")
             except Exception as e:
-                raise ValueError(f"Hiyerarşi yüklenirken hata oluştu: {qi}, {e}")
-
-    def preprocess_numeric_columns(self, numeric_columns):
-        for col in numeric_columns:
-            if col in self.data.columns:
-                self.data[col] = pd.to_numeric(self.data[col], errors="coerce")
+                raise ValueError(f"Hiyerarşi yüklenirken hata oluştu: {e}")
 
     def get_data(self):
         return self.data
