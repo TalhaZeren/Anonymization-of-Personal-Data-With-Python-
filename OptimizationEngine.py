@@ -28,8 +28,8 @@ class OptimizationEngine:
                     # Her kombinasyon için anonimleştirme işlemi
                     anonymizer = Anonymizer(self.data_processor.get_data(), self.data_processor.get_hierarchies())
                     data_anon = anonymizer.apply_k_anonymity([], quasi_identifiers, k, 10)
-                    data_anon = anonymizer.apply_l_diversity([], quasi_identifiers, sensitive_attribute, k, l, 50)
-                    data_anon = anonymizer.apply_t_closeness([], quasi_identifiers, sensitive_attribute, k, t, 50)
+                    data_anon = anonymizer.apply_l_diversity([], quasi_identifiers, sensitive_attribute, k, l, 10)
+                    data_anon = anonymizer.apply_t_closeness([], quasi_identifiers, sensitive_attribute, k, t, 10)
 
                     # Anonimlik Analizi
                     analyzer = AnonymityAnalyzer(self.data_processor.get_data(), data_anon, quasi_identifiers, sensitive_attribute)

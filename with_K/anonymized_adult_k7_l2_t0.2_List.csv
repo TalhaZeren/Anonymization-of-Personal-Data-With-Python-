@@ -1,0 +1,256 @@
+index,age,workclass,fnlwgt,education,education-num,marital-status,occupation,relationship,race,sex,capital-gain,capital-loss,hours-per-week,native-country,salary
+0,"[20, 40[", State-gov,77516,Undergraduate,13,Spouse not present,Other, Not-in-family,*,Male,2174,0,40,North America,<=50K
+1,"[40, 60[", Self-emp-not-inc,83311,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,0,0,13,North America,<=50K
+2,"[20, 40[", Private,215646,High School,9,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,40,North America,<=50K
+3,"[40, 60[", Private,234721,High School,7,Spouse present,Nontechnical, Husband,*,Male,0,0,40,North America,<=50K
+6,"[40, 60[", Private,160187,High School,5,Spouse not present,Other, Not-in-family,*,Female,0,0,16,North America,<=50K
+7,"[40, 60[", Self-emp-not-inc,209642,High School,9,Spouse present,Nontechnical, Husband,*,Male,0,0,45,North America,>50K
+9,"[40, 60[", Private,159449,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,5178,0,40,North America,>50K
+10,"[20, 40[", Private,280464,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,80,North America,>50K
+12,"[20, 40[", Private,122272,Undergraduate,13,Spouse not present,Other, Own-child,*,Female,0,0,30,North America,<=50K
+15,"[20, 40[", Private,245487,High School,4,Spouse present,Other, Husband,*,Male,0,0,45,North America,<=50K
+16,"[20, 40[", Self-emp-not-inc,176756,High School,9,Spouse not present,Other, Own-child,*,Male,0,0,35,North America,<=50K
+17,"[20, 40[", Private,186824,High School,9,Spouse not present,Technical, Unmarried,*,Male,0,0,40,North America,<=50K
+21,"[40, 60[", Private,302146,High School,9,Spouse not present,Other, Unmarried,*,Female,0,0,20,North America,<=50K
+22,"[20, 40[", Federal-gov,76845,High School,5,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+23,"[40, 60[", Private,117037,High School,7,Spouse present,Other, Husband,*,Male,0,2042,40,North America,<=50K
+25,"[40, 60[", Local-gov,216851,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+28,"[20, 40[", Private,367260,High School,9,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,80,North America,<=50K
+29,"[40, 60[", Private,193366,High School,9,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+31,"[20, 40[", Private,266015,Undergraduate,10,Spouse not present,Nontechnical, Own-child,*,Male,0,0,44,North America,<=50K
+33,"[20, 40[", Federal-gov,59951,Undergraduate,10,Spouse present,Other, Own-child,*,Male,0,0,40,North America,<=50K
+34,"[20, 40[", State-gov,311512,Undergraduate,10,Spouse present,Other, Husband,*,Male,0,0,15,North America,<=50K
+36,"[20, 40[", Private,197200,Undergraduate,10,Spouse not present,Technical, Own-child,*,Male,0,0,40,North America,<=50K
+39,"[40, 60[", Self-emp-not-inc,265477,Professional Education,12,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+40,"[20, 40[", Private,507875,High School,5,Spouse present,Technical, Husband,*,Male,0,0,43,North America,<=50K
+41,"[40, 60[", Self-emp-not-inc,88506,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+42,"[20, 40[", Private,172987,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,50,North America,<=50K
+43,"[40, 60[", Private,94638,High School,9,Spouse not present,Other, Unmarried,*,Female,0,0,40,North America,<=50K
+44,"[20, 40[", Private,289980,High School,9,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,35,North America,<=50K
+45,"[40, 60[", Federal-gov,337895,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+46,"[40, 60[", Private,144361,High School,9,Spouse present,Technical, Husband,*,Male,0,0,38,North America,<=50K
+48,"[40, 60[", State-gov,101603,Professional Education,11,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+55,"[40, 60[", Private,237993,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+58,"[40, 60[", Private,147372,High School,9,Spouse present,Other, Husband,*,Male,0,0,48,North America,<=50K
+59,"[20, 40[", Private,188146,High School,9,Spouse present,Technical, Husband,*,Male,5013,0,40,North America,<=50K
+60,"[20, 40[", Private,59496,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,2407,0,40,North America,<=50K
+62,"[40, 60[", Private,149640,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+64,"[20, 40[", Private,105598,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Male,0,0,58,North America,<=50K
+65,"[20, 40[", Private,155537,High School,9,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+66,"[20, 40[", Private,183175,Undergraduate,10,Spouse not present,Other, Not-in-family,*,Female,0,0,40,North America,<=50K
+68,"[40, 60[", Self-emp-inc,191681,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,50,North America,>50K
+69,"[20, 40[", ?,200681,Undergraduate,10,Spouse not present,Other, Own-child,*,Male,0,0,40,North America,<=50K
+71,"[20, 40[", Private,309974,Undergraduate,13,Spouse not present,Nontechnical, Own-child,*,Female,0,0,40,North America,<=50K
+72,"[20, 40[", Self-emp-not-inc,162298,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,0,0,70,North America,>50K
+73,"[20, 40[", Private,211678,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+75,"[20, 40[", Private,213921,High School,9,Spouse not present,Other, Own-child,*,Male,0,0,40,North America,<=50K
+79,"[20, 40[", Local-gov,125927,High School,4,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+83,"[40, 60[", Private,159937,High School,9,Spouse present,Nontechnical, Husband,*,Male,0,0,48,North America,<=50K
+86,"[40, 60[", Local-gov,268234,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,>50K
+88,"[20, 40[", Private,54334,High School,5,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,40,North America,<=50K
+90,"[40, 60[", Private,249977,Professional Education,11,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+91,"[20, 40[", Private,286730,Undergraduate,10,Spouse not present,Technical, Unmarried,*,Female,0,0,40,North America,<=50K
+92,"[20, 40[", Private,212563,Undergraduate,10,Spouse not present,Technical, Unmarried,*,Female,0,0,25,North America,<=50K
+94,"[20, 40[", Local-gov,226296,Undergraduate,13,Spouse present,Other, Husband,*,Male,0,0,40,North America,>50K
+95,"[20, 40[", Local-gov,115585,Undergraduate,10,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,50,North America,<=50K
+97,"[20, 40[", Private,202683,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,48,North America,>50K
+99,"[20, 40[", Federal-gov,249409,High School,9,Spouse not present,Other, Own-child,*,Male,0,0,40,North America,<=50K
+101,"[40, 60[", Private,198282,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,15024,0,60,North America,>50K
+103,"[20, 40[", Private,188300,Undergraduate,10,Spouse not present,Technical, Own-child,*,Female,0,0,40,North America,<=50K
+104,"[20, 40[", Private,103432,High School,9,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+105,"[20, 40[", Self-emp-inc,317660,High School,9,Spouse present,Technical, Husband,*,Male,7688,0,40,North America,>50K
+107,"[20, 40[", Private,194901,High School,7,Spouse not present,Nontechnical, Own-child,*,Male,0,0,40,North America,<=50K
+108,"[20, 40[", Local-gov,189265,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,0,40,North America,<=50K
+109,"[40, 60[", Private,124692,High School,9,Spouse present,Nontechnical, Husband,*,Male,0,0,40,North America,<=50K
+110,"[20, 40[", Private,432376,Undergraduate,13,Spouse not present,Nontechnical, Other-relative,*,Male,0,0,40,North America,<=50K
+112,"[40, 60[", Self-emp-not-inc,335605,High School,9,Spouse present,Other, Husband,*,Male,0,1887,50,North America,>50K
+115,"[40, 60[", Private,95647,High School,5,Spouse present,Nontechnical, Husband,*,Male,0,0,50,North America,<=50K
+116,"[40, 60[", Self-emp-inc,303090,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,50,North America,<=50K
+117,"[40, 60[", Local-gov,197371,Professional Education,11,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+118,"[40, 60[", Private,247552,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,56,North America,<=50K
+119,"[20, 40[", Private,102632,High School,9,Spouse not present,Technical, Not-in-family,*,Male,0,0,41,North America,<=50K
+120,"[20, 40[", Private,199915,Undergraduate,10,Spouse not present,Other, Own-child,*,Female,0,0,40,North America,<=50K
+121,"[40, 60[", Private,118853,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,0,0,60,North America,<=50K
+123,"[20, 40[", State-gov,267989,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,50,North America,>50K
+126,"[20, 40[", Private,111697,Undergraduate,10,Spouse not present,Other, Own-child,*,Female,0,1719,28,North America,<=50K
+128,"[20, 40[", ?,129305,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+129,"[20, 40[", Private,365739,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+131,"[20, 40[", Private,43323,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,1762,40,North America,<=50K
+132,"[20, 40[", Self-emp-not-inc,120985,High School,9,Spouse present,Technical, Husband,*,Male,4386,0,35,North America,<=50K
+133,"[20, 40[", Private,254202,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,0,0,50,North America,<=50K
+136,"[40, 60[", Self-emp-not-inc,56920,High School,9,Spouse present,Technical, Husband,*,Male,0,0,60,North America,<=50K
+138,"[20, 40[", Private,34310,Undergraduate,10,Spouse not present,Nontechnical, Own-child,*,Male,0,0,20,North America,<=50K
+139,"[40, 60[", Private,81973,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+141,"[20, 40[", Private,232782,Undergraduate,10,Spouse not present,Nontechnical, Own-child,*,Female,0,0,40,North America,<=50K
+145,"[20, 40[", Private,185814,High School,9,Spouse not present,Other, Unmarried,*,Female,0,0,30,North America,<=50K
+146,"[20, 40[", Private,175374,Undergraduate,10,Spouse present,Other, Husband,*,Male,0,0,24,North America,<=50K
+147,"[20, 40[", Private,108293,High School,9,Spouse not present,Other, Unmarried,*,Female,0,0,24,North America,<=50K
+151,"[20, 40[", Private,198183,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,0,40,North America,<=50K
+153,"[20, 40[", Private,296158,High School,9,Spouse not present,Technical, Own-child,*,Male,0,0,35,North America,<=50K
+155,"[40, 60[", Private,187715,High School,9,Spouse present,Technical, Husband,*,Male,0,0,46,North America,<=50K
+156,"[20, 40[", Private,214542,Undergraduate,13,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,40,North America,<=50K
+158,"[20, 40[", Private,191535,High School,9,Spouse not present,Technical, Not-in-family,*,Male,0,0,60,North America,<=50K
+161,"[20, 40[", Private,252752,High School,9,Spouse not present,Other, Unmarried,*,Female,0,0,40,North America,<=50K
+165,"[20, 40[", Private,207157,Undergraduate,10,Spouse not present,Other, Unmarried,*,Female,0,0,40,North America,<=50K
+170,"[20, 40[", Private,124953,High School,9,Spouse not present,Other, Not-in-family,*,Male,0,1980,40,North America,<=50K
+171,"[20, 40[", State-gov,175325,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+172,"[40, 60[", Private,96062,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,1977,40,North America,>50K
+173,"[20, 40[", Private,428030,Undergraduate,13,Spouse not present,Technical, Not-in-family,*,Male,0,0,50,North America,<=50K
+174,"[20, 40[", State-gov,149624,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+176,"[20, 40[", Private,312956,High School,9,Spouse not present,Technical, Own-child,*,Male,0,0,40,North America,<=50K
+177,"[20, 40[", Private,483777,High School,9,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,40,North America,<=50K
+179,"[20, 40[", Private,37274,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,65,North America,<=50K
+180,"[40, 60[", Local-gov,181344,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,38,North America,>50K
+182,"[20, 40[", Private,633742,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Male,0,0,45,North America,<=50K
+183,"[40, 60[", Private,286370,High School,4,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+184,"[20, 40[", Federal-gov,29054,Undergraduate,10,Spouse present,Other, Husband,*,Male,0,0,42,North America,>50K
+185,"[20, 40[", Private,304030,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+190,"[20, 40[", Private,155222,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Female,0,0,28,North America,<=50K
+191,"[20, 40[", Private,159567,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+192,"[40, 60[", Local-gov,523910,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+193,"[40, 60[", Private,120939,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,45,North America,<=50K
+194,"[40, 60[", Federal-gov,130760,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,24,North America,<=50K
+196,"[20, 40[", Private,99374,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+199,"[20, 40[", Self-emp-not-inc,32921,High School,9,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,40,North America,<=50K
+202,"[40, 60[", Private,259323,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,0,0,50,North America,>50K
+204,"[20, 40[", State-gov,48211,High School,9,Spouse not present,Other, Unmarried,*,Female,0,0,35,North America,<=50K
+206,"[20, 40[", Private,128757,Undergraduate,13,Spouse present,Other, Husband,*,Male,7298,0,36,North America,>50K
+207,"[20, 40[", Private,36270,High School,9,Spouse not present,Technical, Not-in-family,*,Male,0,0,60,North America,<=50K
+210,"[40, 60[", Local-gov,160943,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+211,"[20, 40[", Private,208358,High School,9,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+212,"[20, 40[", Private,153790,Undergraduate,10,Spouse not present,Nontechnical, Not-in-family,*,Female,0,0,40,North America,<=50K
+214,"[40, 60[", Self-emp-inc,125417,High School,4,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+215,"[20, 40[", Private,635913,Undergraduate,13,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,60,North America,>50K
+218,"[40, 60[", Private,109434,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,55,North America,<=50K
+219,"[20, 40[", Private,255004,High School,6,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+220,"[20, 40[", Private,197860,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,40,North America,<=50K
+223,"[40, 60[", Private,176681,High School,9,Spouse present,Other, Husband,*,Male,0,0,20,North America,<=50K
+230,"[20, 40[", Private,538583,High School,7,Spouse not present,Other, Not-in-family,*,Male,3674,0,40,North America,<=50K
+232,"[20, 40[", Private,159732,Undergraduate,10,Spouse not present,Other, Not-in-family,*,Male,0,0,42,North America,<=50K
+233,"[20, 40[", Private,110978,Undergraduate,10,Spouse not present,Technical, Other-relative,*,Female,0,0,40,North America,<=50K
+235,"[40, 60[", State-gov,268700,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+239,"[20, 40[", Private,115458,High School,9,Spouse not present,Other, Own-child,*,Male,0,0,40,North America,<=50K
+240,"[40, 60[", Private,347890,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+243,"[20, 40[", ?,119156,Undergraduate,10,Spouse not present,Other, Own-child,*,Male,0,0,20,North America,<=50K
+244,"[20, 40[", Private,179488,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Male,0,1741,40,North America,<=50K
+246,"[40, 60[", Private,236596,High School,9,Spouse present,Other, Husband,*,Male,0,0,45,North America,>50K
+247,"[20, 40[", Private,183916,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,0,34,North America,<=50K
+248,"[40, 60[", Private,207578,Professional Education,12,Spouse present,Technical, Husband,*,Male,0,1977,60,North America,>50K
+252,"[40, 60[", Local-gov,171328,High School,6,Spouse not present,Other, Unmarried,*,Female,0,0,30,North America,<=50K
+256,"[20, 40[", Private,117789,High School,9,Spouse not present,Other, Own-child,*,Female,0,0,40,North America,<=50K
+257,"[20, 40[", Private,172579,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,0,30,North America,<=50K
+260,"[20, 40[", Private,150042,Undergraduate,13,Spouse not present,Technical, Own-child,*,Female,0,0,40,North America,<=50K
+261,"[40, 60[", Private,98092,High School,9,Spouse present,Nontechnical, Husband,*,Male,0,0,60,North America,<=50K
+263,"[40, 60[", Private,146013,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,4064,0,40,North America,<=50K
+264,"[20, 40[", Private,378322,High School,7,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+268,"[20, 40[", Private,185480,Undergraduate,13,Spouse not present,Technical, Not-in-family,*,Female,0,0,45,North America,<=50K
+275,"[40, 60[", Private,477983,High School,9,Spouse present,Nontechnical, Husband,*,Male,0,0,40,North America,<=50K
+276,"[40, 60[", Private,170924,Undergraduate,10,Spouse present,Technical, Husband,*,Male,7298,0,40,North America,>50K
+277,"[20, 40[", Private,190174,Undergraduate,10,Spouse not present,Nontechnical, Not-in-family,*,Female,0,0,40,North America,<=50K
+278,"[20, 40[", Private,193787,Undergraduate,10,Spouse not present,Technical, Own-child,*,Female,0,0,40,North America,<=50K
+281,"[40, 60[", Local-gov,97688,Undergraduate,10,Spouse present,Technical, Husband,*,Male,5178,0,40,North America,>50K
+284,"[20, 40[", Private,205759,High School,9,Spouse not present,Nontechnical, Own-child,*,Male,0,0,40,North America,<=50K
+286,"[40, 60[", Private,220531,Professional Education,15,Spouse present,Technical, Husband,*,Male,0,0,60,North America,>50K
+288,"[20, 40[", Private,371987,Undergraduate,13,Spouse not present,Nontechnical, Not-in-family,*,Female,0,0,40,North America,<=50K
+290,"[20, 40[", Private,200352,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,45,North America,<=50K
+292,"[20, 40[", Local-gov,220419,Undergraduate,13,Spouse not present,Other, Not-in-family,*,Male,0,0,56,North America,<=50K
+293,"[20, 40[", Private,231931,Undergraduate,10,Spouse not present,Nontechnical, Own-child,*,Male,0,0,45,North America,<=50K
+294,"[20, 40[", Private,248402,Undergraduate,13,Spouse not present,Technical, Unmarried,*,Female,0,0,40,North America,<=50K
+296,"[20, 40[", Self-emp-inc,57424,Undergraduate,13,Spouse not present,Nontechnical, Not-in-family,*,Female,0,0,60,North America,<=50K
+298,"[20, 40[", Private,278130,High School,9,Spouse not present,Technical, Own-child,*,Male,0,0,40,North America,<=50K
+299,"[20, 40[", Private,169469,High School,9,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,80,North America,<=50K
+301,"[20, 40[", Private,153718,Undergraduate,10,Spouse not present,Other, Not-in-family,*,Female,0,0,25,North America,<=50K
+302,"[20, 40[", Private,217460,High School,9,Spouse present,Other, Husband,*,Male,0,0,45,North America,>50K
+303,"[40, 60[", Private,238638,High School,9,Spouse present,Nontechnical, Husband,*,Male,4386,0,40,North America,>50K
+305,"[40, 60[", Private,173321,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,0,40,North America,<=50K
+310,"[20, 40[", Private,59306,Undergraduate,13,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,40,North America,<=50K
+313,"[20, 40[", Self-emp-not-inc,205607,Undergraduate,13,Spouse not present,Technical, Not-in-family,*,Female,0,0,40,North America,>50K
+314,"[20, 40[", Private,199698,Undergraduate,10,Spouse not present,Nontechnical, Own-child,*,Male,0,0,15,North America,<=50K
+315,"[20, 40[", Private,191954,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+318,"[20, 40[", Private,423158,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Female,0,0,40,North America,<=50K
+321,"[40, 60[", Private,50356,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,1485,50,North America,<=50K
+322,"[20, 40[", Private,186110,High School,9,Spouse not present,Other, Not-in-family,*,Male,0,0,45,North America,<=50K
+328,"[40, 60[", Self-emp-not-inc,321171,High School,9,Spouse present,Nontechnical, Husband,*,Male,0,0,40,North America,<=50K
+331,"[20, 40[", Private,224563,Undergraduate,13,Spouse not present,Other, Not-in-family,*,Male,0,0,40,North America,<=50K
+333,"[40, 60[", Local-gov,98545,High School,6,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+334,"[40, 60[", Private,242606,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+336,"[20, 40[", Private,94235,High School,9,Spouse not present,Technical, Other-relative,*,Male,0,0,40,North America,<=50K
+339,"[40, 60[", Private,261192,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+342,"[20, 40[", State-gov,119272,High School,9,Spouse present,Other, Husband,*,Male,7298,0,40,North America,>50K
+343,"[20, 40[", Private,85043,High School,9,Spouse not present,Other, Not-in-family,*,Male,0,0,20,North America,<=50K
+344,"[20, 40[", State-gov,293364,Undergraduate,10,Spouse not present,Other, Own-child,*,Female,0,0,40,North America,<=50K
+349,"[20, 40[", Private,156464,Undergraduate,13,Spouse not present,Technical, Own-child,*,Male,0,0,25,North America,<=50K
+350,"[20, 40[", Private,117963,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,0,0,40,North America,>50K
+351,"[20, 40[", Private,192262,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+352,"[20, 40[", Private,111363,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,0,0,40,North America,>50K
+353,"[40, 60[", Local-gov,329752,High School,7,Spouse present,Other, Husband,*,Male,0,0,30,North America,<=50K
+355,"[20, 40[", Federal-gov,95432,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,>50K
+357,"[40, 60[", Private,96129,Professional Education,11,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+364,"[20, 40[", Private,410439,High School,9,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,55,North America,<=50K
+365,"[20, 40[", Private,92262,High School,9,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+366,"[40, 60[", Self-emp-not-inc,183081,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,45,North America,<=50K
+370,"[20, 40[", Federal-gov,185885,Undergraduate,10,Spouse not present,Other, Unmarried,*,Female,0,0,15,North America,<=50K
+372,"[40, 60[", State-gov,184018,Professional Education,11,Spouse present,Technical, Husband,*,Male,0,0,38,North America,>50K
+373,"[40, 60[", Private,256649,High School,9,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+375,"[20, 40[", Local-gov,350845,Undergraduate,10,Spouse not present,Other, Own-child,*,Female,0,0,10,North America,<=50K
+377,"[20, 40[", Private,35633,Undergraduate,10,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,40,North America,<=50K
+382,"[20, 40[", Private,344991,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+385,"[20, 40[", Private,396099,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,0,25,North America,<=50K
+386,"[20, 40[", Private,134152,High School,9,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+391,"[20, 40[", Private,301302,Undergraduate,13,Spouse not present,Technical, Not-in-family,*,Male,0,0,50,North America,<=50K
+394,"[20, 40[", Private,196164,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,0,35,North America,<=50K
+395,"[40, 60[", Private,115562,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+397,"[20, 40[", ?,137300,High School,9,Spouse not present,Other, Other-relative,*,Female,0,0,35,North America,<=50K
+398,"[20, 40[", Private,86872,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,0,0,55,North America,>50K
+399,"[40, 60[", Self-emp-inc,132178,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,0,0,50,North America,>50K
+400,"[20, 40[", Private,416103,Undergraduate,10,Spouse not present,Nontechnical, Own-child,*,Male,0,0,40,North America,<=50K
+401,"[20, 40[", Private,108574,Undergraduate,10,Spouse not present,Other, Not-in-family,*,Female,0,0,40,North America,<=50K
+406,"[20, 40[", Private,110145,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+407,"[40, 60[", Self-emp-not-inc,317253,High School,9,Spouse present,Technical, Husband,*,Male,0,0,25,North America,<=50K
+409,"[20, 40[", Private,364657,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,50,North America,<=50K
+412,"[20, 40[", Private,118500,Undergraduate,10,Spouse not present,Nontechnical, Unmarried,*,Female,0,0,40,North America,<=50K
+414,"[20, 40[", State-gov,1033222,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+415,"[20, 40[", Private,92440,High School,8,Spouse not present,Technical, Not-in-family,*,Male,0,0,50,North America,>50K
+417,"[20, 40[", Private,426017,High School,7,Spouse not present,Other, Own-child,*,Female,0,0,19,North America,<=50K
+418,"[20, 40[", Local-gov,243867,High School,7,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+419,"[20, 40[", State-gov,240283,High School,9,Spouse not present,Other, Unmarried,*,Female,0,0,40,North America,<=50K
+420,"[20, 40[", Private,61777,Undergraduate,10,Spouse present,Nontechnical, Husband,*,Male,0,0,30,North America,<=50K
+423,"[20, 40[", Private,188401,High School,9,Spouse not present,Other, Not-in-family,*,Male,0,0,40,North America,<=50K
+425,"[20, 40[", Private,133373,High School,9,Spouse present,Other, Husband,*,Male,0,0,60,North America,<=50K
+427,"[20, 40[", Private,204653,High School,9,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,72,North America,<=50K
+436,"[20, 40[", Local-gov,284843,High School,9,Spouse not present,Other, Not-in-family,*,Male,594,0,60,North America,<=50K
+437,"[20, 40[", Local-gov,117018,Undergraduate,10,Spouse not present,Other, Not-in-family,*,Female,0,0,40,North America,<=50K
+438,"[20, 40[", Private,81281,Undergraduate,10,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+440,"[20, 40[", Private,363425,Undergraduate,13,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+441,"[40, 60[", Private,45857,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,0,28,North America,<=50K
+442,"[20, 40[", Federal-gov,191073,High School,9,Spouse not present,Other, Own-child,*,Male,0,0,40,North America,<=50K
+443,"[40, 60[", Private,116632,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+444,"[20, 40[", Private,405855,High School,5,Spouse not present,Technical, Other-relative,*,Male,0,0,40,North America,<=50K
+445,"[20, 40[", Private,298227,Undergraduate,10,Spouse not present,Nontechnical, Not-in-family,*,Male,0,0,35,North America,<=50K
+447,"[40, 60[", Private,56915,High School,9,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+448,"[20, 40[", Private,146538,High School,9,Spouse present,Technical, Husband,*,Male,0,0,40,North America,<=50K
+451,"[40, 60[", Self-emp-inc,197332,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,55,North America,>50K
+455,"[40, 60[", Private,72887,Professional Education,11,Spouse present,Technical, Husband,*,Male,0,0,40,North America,>50K
+457,"[20, 40[", Private,351299,Undergraduate,10,Spouse present,Other, Husband,*,Male,0,0,50,North America,<=50K
+458,"[20, 40[", Private,54012,High School,9,Spouse present,Other, Husband,*,Male,0,0,60,North America,<=50K
+459,"[20, 40[", ?,115745,Undergraduate,10,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+461,"[40, 60[", Local-gov,288825,High School,9,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+462,"[20, 40[", Private,132601,Undergraduate,13,Spouse present,Technical, Husband,*,Male,0,0,50,North America,<=50K
+464,"[20, 40[", Private,170070,Undergraduate,13,Spouse not present,Technical, Not-in-family,*,Female,0,0,20,North America,<=50K
+467,"[20, 40[", Private,33983,Undergraduate,10,Spouse present,Other, Husband,*,Male,0,0,40,North America,<=50K
+471,"[20, 40[", ?,139883,Undergraduate,10,Spouse not present,Other, Own-child,*,Male,0,0,40,North America,<=50K
+472,"[20, 40[", Private,285020,High School,9,Spouse not present,Technical, Not-in-family,*,Male,0,0,40,North America,<=50K
+473,"[20, 40[", Private,303990,High School,9,Spouse not present,Other, Not-in-family,*,Male,0,0,60,North America,<=50K
+477,"[20, 40[", Private,281432,Undergraduate,10,Spouse not present,Nontechnical, Own-child,*,Male,0,0,30,North America,<=50K
+478,"[20, 40[", Private,161155,High School,6,Spouse not present,Other, Not-in-family,*,Male,0,0,40,North America,<=50K
+479,"[20, 40[", Private,197904,High School,9,Spouse not present,Other, Unmarried,*,Female,0,0,35,North America,<=50K
+481,"[40, 60[", Self-emp-not-inc,170721,Undergraduate,10,Spouse present,Technical, Husband,*,Male,0,0,20,North America,<=50K
+482,"[20, 40[", State-gov,70100,Undergraduate,13,Spouse not present,Technical, Not-in-family,*,Male,0,0,20,North America,<=50K
+485,"[20, 40[", Private,189775,Undergraduate,10,Spouse not present,Other, Own-child,*,Female,0,0,20,North America,<=50K
+487,"[40, 60[", Local-gov,286967,High School,9,Spouse present,Other, Husband,*,Male,0,0,45,North America,<=50K
+489,"[20, 40[", Private,91039,Undergraduate,13,Spouse present,Nontechnical, Husband,*,Male,15024,0,60,North America,>50K
+490,"[40, 60[", Private,347934,High School,9,Spouse not present,Other, Not-in-family,*,Female,0,0,35,North America,<=50K
+494,"[20, 40[", Private,178107,Undergraduate,13,Spouse not present,Technical, Own-child,*,Male,0,0,20,North America,<=50K
+495,"[40, 60[", Private,343121,High School,9,Spouse not present,Other, Unmarried,*,Female,0,0,36,North America,<=50K
+496,"[20, 40[", Private,262749,Undergraduate,10,Spouse not present,Technical, Own-child,*,Male,0,0,40,North America,<=50K
+498,"[20, 40[", Private,64293,Undergraduate,10,Spouse not present,Technical, Not-in-family,*,Female,0,0,35,North America,<=50K
