@@ -1,4 +1,4 @@
-name,age,gender,city,religion,disease
+name,age,sex,city,religion,disease
 Ramsha,29,Female,Tamil Nadu,Hindu,Cancer
 Gabu,24,Male,Tamil Nadu,Hindu,Cancer
 Sabu,23,Male,Tamil Nadu,Hindu,Cancer
@@ -12,4 +12,90 @@ Rambha,19,Male,Kerala,Hindu,Cancer
 Kishor,29,Male,Karnataka,Hindu,Heart-related
 Johnson,17,Male,Kerala,Christian,Heart-related
 John,19,Male,Kerala,Christian,Viral infection
-
+Asha,25,Female,Tamil Nadu,Hindu,Diabetes
+Rehan,30,Male,Karnataka,Muslim,Viral infection
+Bala,45,Male,Andhra Pradesh,Hindu,Cancer
+Kiran,21,Female,Kerala,Christian,No illness
+Divya,32,Female,Tamil Nadu,Hindu,Asthma
+Anita,29,Female,Karnataka,Hindu,TB
+Mohan,42,Male,Kerala,Christian,Heart-related
+Farhan,26,Male,Tamil Nadu,Muslim,No illness
+Maria,33,Female,Karnataka,Christian,Diabetes
+Priya,22,Female,Tamil Nadu,Hindu,Cancer
+Vijay,35,Male,Karnataka,Hindu,Viral infection
+Soni,20,Female,Kerala,Hindu,Cancer
+Rohan,18,Male,Andhra Pradesh,Hindu,No illness
+Kunal,27,Male,Tamil Nadu,Muslim,TB
+Deepa,23,Female,Karnataka,Hindu,Heart-related
+Ankit,31,Male,Kerala,Christian,Asthma
+Asha,22,Female,Kerala,Hindu,No illness
+Rehan,29,Male,Tamil Nadu,Muslim,Heart-related
+Bala,41,Male,Karnataka,Hindu,No illness
+Kiran,24,Female,Andhra Pradesh,Christian,TB
+Divya,36,Female,Kerala,Hindu,Asthma
+Anita,27,Female,Tamil Nadu,Hindu,Viral infection
+Mohan,29,Male,Karnataka,Hindu,Cancer
+Farhan,25,Male,Tamil Nadu,Muslim,No illness
+Maria,40,Female,Kerala,Christian,Heart-related
+Priya,23,Female,Andhra Pradesh,Hindu,No illness
+Vijay,26,Male,Kerala,Hindu,Diabetes
+Soni,19,Female,Tamil Nadu,Hindu,Cancer
+Rohan,28,Male,Karnataka,Hindu,Heart-related
+Kunal,22,Male,Andhra Pradesh,Muslim,TB
+Deepa,25,Female,Tamil Nadu,Hindu,Viral infection
+Ankit,34,Male,Karnataka,Christian,Asthma
+Asha,20,Female,Karnataka,Hindu,No illness
+Rehan,31,Male,Kerala,Muslim,Cancer
+Bala,37,Male,Tamil Nadu,Hindu,Heart-related
+Kiran,29,Female,Karnataka,Christian,Diabetes
+Divya,19,Female,Andhra Pradesh,Hindu,Asthma
+Anita,42,Female,Kerala,Hindu,No illness
+Mohan,38,Male,Tamil Nadu,Hindu,Heart-related
+Farhan,35,Male,Karnataka,Muslim,Viral infection
+Maria,21,Female,Andhra Pradesh,Christian,TB
+Priya,27,Female,Kerala,Hindu,Asthma
+Vijay,39,Male,Tamil Nadu,Hindu,No illness
+Soni,24,Female,Karnataka,Hindu,Diabetes
+Rohan,33,Male,Kerala,Hindu,Cancer
+Kunal,28,Male,Tamil Nadu,Muslim,Heart-related
+Deepa,45,Female,Karnataka,Hindu,No illness
+Ankit,29,Male,Andhra Pradesh,Christian,TB
+Asha,22,Female,Tamil Nadu,Hindu,Heart-related
+Rehan,36,Male,Karnataka,Muslim,No illness
+Bala,44,Male,Andhra Pradesh,Hindu,Diabetes
+Kiran,23,Female,Kerala,Christian,Asthma
+Divya,28,Female,Tamil Nadu,Hindu,Heart-related
+Anita,33,Female,Karnataka,Hindu,Cancer
+Mohan,23,Male,Kerala,Christian,No illness
+Farhan,41,Male,Tamil Nadu,Muslim,TB
+Maria,26,Female,Karnataka,Christian,Heart-related
+Priya,24,Female,Andhra Pradesh,Hindu,Viral infection
+Vijay,19,Male,Kerala,Hindu,Diabetes
+Soni,18,Female,Tamil Nadu,Hindu,No illness
+Rohan,31,Male,Karnataka,Hindu,TB
+Kunal,37,Male,Andhra Pradesh,Muslim,Heart-related
+Deepa,29,Female,Tamil Nadu,Hindu,No illness
+Ankit,36,Male,Karnataka,Christian,Asthma
+Asha,27,Female,Andhra Pradesh,Hindu,Diabetes
+Rehan,33,Male,Kerala,Muslim,Viral infection
+Bala,45,Male,Tamil Nadu,Hindu,No illness
+Kiran,24,Female,Karnataka,Christian,Asthma
+Divya,20,Female,Andhra Pradesh,Hindu,TB
+Anita,21,Female,Kerala,Hindu,Heart-related
+Mohan,43,Male,Tamil Nadu,Hindu,Viral infection
+Farhan,22,Male,Karnataka,Muslim,Cancer
+Maria,39,Female,Kerala,Christian,No illness
+Priya,30,Female,Tamil Nadu,Hindu,Asthma
+Vijay,25,Male,Karnataka,Hindu,Diabetes
+Soni,28,Female,Andhra Pradesh,Hindu,Heart-related
+Rohan,18,Male,Kerala,Hindu,No illness
+Kunal,20,Male,Tamil Nadu,Muslim,TB
+Deepa,32,Female,Karnataka,Hindu,Cancer
+Ankit,21,Male,Andhra Pradesh,Christian,Diabetes
+Asha,29,Female,Kerala,Hindu,Heart-related
+Rehan,40,Male,Karnataka,Muslim,No illness
+Bala,27,Male,Andhra Pradesh,Hindu,TB
+Kiran,22,Female,Tamil Nadu,Christian,No illness
+Divya,28,Female,Karnataka,Hindu,Asthma
+Anita,33,Female,Andhra Pradesh,Hindu,Heart-related
+Mohan,36,Male,Kerala,Christian,Cancer
