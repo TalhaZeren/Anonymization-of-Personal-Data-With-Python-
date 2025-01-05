@@ -3,6 +3,7 @@ from DataProcessor import DataProcessor
 from OptimizationEngine import OptimizationEngine
 from DataLossAnalyzer import DataLossAnalyzer
 from AnonymityAnalyzer import AnonymityAnalyzer
+from PSOEngine import PSOEngine
 from VisualizationEngine import VisualizationEngine
 import time
 import sys
@@ -22,14 +23,21 @@ class Main:
     def main(self,value_k,value_l, value_t):
         start = time.time()    
         # PyQt uygulamasını başlatıyoruz.
-        data_path = "examples/data/adult.csv"
+        data_path = "examples/data/adult_1000.csv"
         hierarchy_folder = "examples/hierarchies"
         
         # Identifiers, Quasi-Identifiers ve Sensitive Attribute
         identifiers = ["race"]  # "race" sütunu identifiers olarak tanımlandı
         quasi_identifiers = ["age", "education", "marital-status", "occupation", "sex", "native-country"]
         sensitive_attribute = "salary"
-        
+
+        self.pso_engine = PSOEngine(
+            data_path=data_path,
+            hierarchy_folder=hierarchy_folder,
+            quasi_identifiers=quasi_identifiers,
+            sensitive_attribute=sensitive_attribute,
+        )
+      
         # k, l, t değerlerinin denenecek kombinasyonları
         try:
             k_values = list(map(int, value_k)) # Burada değerleri virgülle ayırıp listeye çevirip teker teker işleyeceğiz.
@@ -44,7 +52,7 @@ class Main:
         try:
             # Pipeline oluştur
             pipeline = AnonymizationPipeline(data_path, hierarchy_folder)
-
+            
             # Kombinasyonları denemek için bir döngü başlat
             for k in k_values:
                 for l in l_values:
@@ -61,7 +69,7 @@ class Main:
                                 t=t, 
                                 suppression_level=10
                             )
-
+                            
                             # Anonimleştirilmiş veriyi kaydet
                             output_path = f"examples/data/anonymized_adult_k{k}_l{l}_t{t}_List.csv"
                             pipeline.save_anoymized_data(anonymized_data, output_path)
@@ -102,6 +110,8 @@ class Main:
         except Exception as e:
             print(f"Anonimleştirme işlemi sırasında bir hata oluştu: {e}")
             return
+        
+    
 
         # Optimizasyon
         print("\n Optimizasyon başlatılıyor...")
@@ -136,8 +146,13 @@ class Main:
             l_values=l_values,
             t_values=t_values
         )
-
-
+        best_result = self.pso_engine.optimize()
+        print("\nPSO ile bulunan en iyi sonuç:")
+        print(f" - k: {best_result['k']}")
+        print(f" - l: {best_result['l']}")
+        print(f" - t: {best_result['t']}")
+        print(f" - Skor: {best_result['score']}")
+    
 
         # VisualizationEngine kullanarak sonuçları görselleştir.
         visualizer = VisualizationEngine(all_results)
