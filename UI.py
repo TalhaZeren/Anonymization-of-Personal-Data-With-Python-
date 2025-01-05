@@ -1,5 +1,3 @@
-import shutil
-import os
 from PyQt5.QtWidgets import (
     QVBoxLayout,
     QHBoxLayout,
@@ -49,52 +47,34 @@ class UI(QMainWindow):
         self.input_widget = QWidget() # Değer giriş alanları
         input_layout = QVBoxLayout(self.input_widget)
 
-        # Dosya Seçme yolu - Anonimleştirilecek veri seti seçimi buradan yapılır.
-    
-        #  ----   Giriş alanları ve etiketler ----
+        # Giriş alanları ve etiketler
+
         # k-anonimlik metrik değeri
         self.input_k = QLineEdit()
         self.input_k.setPlaceholderText("k-Anonimlik değerini giriniz")
-        # l-Diversity metrik değeri
+        # l-diversity metrik değeri
         self.input_l = QLineEdit()
         self.input_l.setPlaceholderText("l-Diversity değerini giriniz")
-        # t-Closeness metrik değeri
+         # t-closeness metrik değeri
         self.input_t = QLineEdit()
         self.input_t.setPlaceholderText("t-Closeness değerini giriniz")
-        # Suppression değeri
-        self.input_suppression = QLineEdit()
-        self.input_suppression.setPlaceholderText("Suppression değerini giriniz")
-
-        self.file_button = QPushButton("Dosya Seç")
-        self.file_button.clicked.connect(self.select_file)
-
+       
         self.submit_button = QPushButton("Gönder") # Değerleri göndermek için buton
         self.submit_button.clicked.connect(self.send_data) # Butona tıklama olayını bağla
-        
-        input_layout.addWidget(QLabel("Lütfen bir dosya seçin"))
-        input_layout.addWidget(self.file_button)
+
 
         # Giriş alanlarını ve butonu layout'a ekle
         input_layout.addWidget(QLabel("Anonimlik Değerlerini Girin:"))
         input_layout.addWidget(self.input_k)
         input_layout.addWidget(self.input_l)
         input_layout.addWidget(self.input_t)
-        input_layout.addWidget(self.input_suppression)
+    
         input_layout.addWidget(self.submit_button) 
-        
 
         splitter.addWidget(self.input_widget)
+
         #Splitter'ı ana layout'a ekle
         main_layout.addWidget(splitter)
-
-        self.selected_file_path = ""
-
-    def select_file(self):
-            # Dosya seçme penceresi açmalıyız.
-            file_path, _ = QFileDialog.getOpenFileName(self,"Dosya Seç", "", "CSV Dosyaları (*.csv);; Tüm Dosyalar (*)")
-            if file_path: # Eğer bir dosya seçildiyse;
-                self.selected_file_path = file_path
-                print(f"Seçilen dosya {self.selected_file_path}")
     
     def send_data(self):
         #Kullanıcıdan alınan değerleri callback ile Main sınıfına gönderiyoruz.
@@ -102,23 +82,9 @@ class UI(QMainWindow):
         value_k = self.input_k.text().split(',')
         value_l = self.input_l.text().split(',')
         value_t = self.input_t.text().split(',')
-        value_suppression = self.input_suppression.text()
+        
 
-        # Seçilen dosyayı belirtilen klasöre kopyala
-        if self.selected_file_path:
-             target_directory = "examples/addDataSet/"
-             target_path = os.path.join(target_directory,os.path.basename(self.selected_file_path))
-        try:
-            # Kopyalama işlemi
-            shutil.copy(self.selected_file_path, target_path)
-            print(f"Dosya {target_path} dizinine kopyalandı.")
-        except Exception as e:
-            print(f"Dosya kopyalanırken hata oluştu: {e}")
-            target_path = ""
-        else:
-             target_path = "" # Aksi halde boş kalır.
-
-        self.callback(value_k,value_l,value_t,value_suppression,target_path)
+        self.callback(value_k,value_l,value_t)
 
     def show_fayda_risk(self,visualizer):
         #Fayda-Risk analizi grafiğini göster.

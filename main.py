@@ -19,18 +19,11 @@ class Main:
         self.ui.show()
         sys.exit(self.app.exec_())
 
-
-    def main(self,value_k,value_l, value_t,value_suppression,file_path):
+    def main(self,value_k,value_l, value_t):
         start = time.time()    
         # PyQt uygulamasını başlatıyoruz.
-        if file_path: # Eğer kullanıcı bir dosya seçmiş ve kopyalamışsa  
-            data_path = file_path
-            print(f"Kullanıcı tarafından seçilen ve kopyalanan dosya: {data_path}")
-        else:
-            # Varsayılan dosya seçilir.
-            data_path = "examples/data/adult.csv"
-            print(f"Varsayılan dosya kullanılıyor : {data_path}")
-            hierarchy_folder = "examples/hierarchies"
+        data_path = "examples/data/adult.csv"
+        hierarchy_folder = "examples/hierarchies"
         
         # Identifiers, Quasi-Identifiers ve Sensitive Attribute
         identifiers = ["race"]  # "race" sütunu identifiers olarak tanımlandı
@@ -41,7 +34,8 @@ class Main:
         try:
             k_values = list(map(int, value_k)) # Burada değerleri virgülle ayırıp listeye çevirip teker teker işleyeceğiz.
             l_values = list(map(int, value_l)) 
-            t_values = list(map(float, value_t))
+            t_values = list(map(float, value_t)
+            )
         except ValueError as e:
             QMessageBox.critical(None,"Hata",f"Girilen metrik değerlerinde bir hata var : {e}")
 
@@ -65,7 +59,7 @@ class Main:
                                 k=k, 
                                 l=l, 
                                 t=t, 
-                                suppression_level=int(value_suppression)
+                                suppression_level=10
                             )
 
                             # Anonimleştirilmiş veriyi kaydet
@@ -143,13 +137,15 @@ class Main:
             t_values=t_values
         )
 
+
+
         # VisualizationEngine kullanarak sonuçları görselleştir.
         visualizer = VisualizationEngine(all_results)
 
         # PyQt arayüzüne grafik çizdiriliyor.
         self.ui.show_fayda_risk(visualizer)
         self.ui.show_fayda_metrikleri(visualizer)
-
+        
         end = time.time()
         print("\nTüm işlemler tamamlandı, sonuçlarınızı kontrol ediniz.")
         print(f"\nToplam geçen süre: {end - start} saniye")
