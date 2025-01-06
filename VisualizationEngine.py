@@ -19,7 +19,7 @@ class VisualizationEngine:
         # Matplotlib figür ve eksen oluşturma 
         
         best_result = df.loc[df["score"].idxmax()]
-        
+
         ax = canvas.figure.add_subplot(111)
         ax.clear()  # Önceki grafiği temizle
 
@@ -96,6 +96,20 @@ class VisualizationEngine:
         ax.set_xlabel("Metrik")
         ax.legend(title="Skor")
         ax.grid(axis="y", linestyle="--", alpha=0.7)
+
+        canvas.draw()
+
+    def plot_pso_results(self,canvas,pso_results):
+        # PSO sonuçları burada görselleştiriliyor.
+        ax = canvas.figure.add_subplot(111)
+        ax.clear()
+
+        # PSO sonuçlarını grafik üzerinde göster.
+        ax.bar(["k","l","t"], [pso_results["k"], pso_results["l"], pso_results["t"]], color = "blue")
+        ax.set_title("PSO Optimizasyon Sonuçları")
+        ax.set_ylabel("Değer")
+        ax.set_xlabel("Parametreler")
+        ax.grid(axis="y", linestyle = "--",alpha=0.7)
 
         canvas.draw()
 

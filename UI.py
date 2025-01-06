@@ -18,7 +18,7 @@ class UI(QMainWindow):
 
         self.callback = callback # Main sınıfına veri göndermek için bir referans.
         self.setWindowTitle("Anonimleştirme ve Optimizasyon") # Pencere başlığımız
-        self.setGeometry(300,300,1200,800) # Daha büyük pencere boyutu 
+        self.setGeometry(300,300,1400,800) # Daha büyük pencere boyutu 
 
         # Ana widget ve layout
         self.central_widget = QWidget()
@@ -40,6 +40,10 @@ class UI(QMainWindow):
         self.figure_Metrics = Figure() # Metrik grafiği için figür
         self.canvas_Metrics = FigureCanvas(self.figure_Metrics) # Metrik grafiği için canvas
         graph_layout.addWidget(self.canvas_Metrics)
+
+        self.figure_PSO = Figure() # PSO sonuçları için figür oluşturuluyor.
+        self.canvas_PSO = FigureCanvas(self.figure_PSO)
+        graph_layout.addWidget(self.canvas_PSO)
 
         splitter.addWidget(self.graph_widget)
 
@@ -68,8 +72,13 @@ class UI(QMainWindow):
         input_layout.addWidget(self.input_k)
         input_layout.addWidget(self.input_l)
         input_layout.addWidget(self.input_t)
-    
+        # Onay butonu
         input_layout.addWidget(self.submit_button) 
+
+
+        # PSO sonuçlarını göstermek için bir metin alanı
+        self.pso_results_label = QLabel("PSO ile Optimizasyon Sonuçları\n")
+        input_layout.addWidget(self.pso_results_label)
 
         splitter.addWidget(self.input_widget)
 
@@ -95,6 +104,21 @@ class UI(QMainWindow):
         #Fayda Metrikleri grafiğini göster.
         self.figure_Metrics.clear()
         visualizer.plot_fayda_metrikleri(self.canvas_Metrics)
+
+    def show_pso_results(self, visualizer, pso_results):
+        # PSO sonuçlarını görselleştir.
+        self.figure_PSO.clear() # Önceki sonucu temizle.
+        visualizer.plot_pso_results(self.canvas_PSO, pso_results)
+
+        self.pso_results_label.setText(
+            f"PSO Sonuçları:\n"
+            f"En iyi k-anonimlik değeri: {pso_results['k']}\n"
+            f"En iyi l-diversity değeri: {pso_results['l']}\n"
+            f"En iyi t-closeness değeri: {pso_results['t']}\n"
+            f"Skor: {pso_results['score']:.4f}"
+        )
+
+
 
 
 

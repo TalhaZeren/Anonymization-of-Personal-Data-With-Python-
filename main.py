@@ -158,8 +158,12 @@ class Main:
         visualizer = VisualizationEngine(all_results)
 
         # PyQt arayüzüne grafik çizdiriliyor.
+        # Fayda Risk Grafiği
         self.ui.show_fayda_risk(visualizer)
+        # Metrik Grafiği
         self.ui.show_fayda_metrikleri(visualizer)
+        # PSO Optimizasyon Grafiği
+        self.ui.show_pso_results(visualizer,best_result)
         
         end = time.time()
         print("\nTüm işlemler tamamlandı, sonuçlarınızı kontrol ediniz.")
