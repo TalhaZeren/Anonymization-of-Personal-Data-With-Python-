@@ -53,6 +53,24 @@ class UI(QMainWindow):
 
         # Giriş alanları ve etiketler
 
+        # Giriş alanlarını genişletiyoruz.
+
+        # k-anonimlik aralığı
+        self.input_k_min = QLineEdit()
+        self.input_k_min.setPlaceholderText("k (Min) değerini giriniz")
+        self.input_k_max = QLineEdit()
+        self.input_k_max.setPlaceholderText("k (Max) değerini giriniz")
+        # L-diverstiy aralığı
+        self.input_l_min = QLineEdit()
+        self.input_l_min.setPlaceholderText("l (Min) değerini giriniz")
+        self.input_l_max = QLineEdit()
+        self.input_l_max.setPlaceholderText("l (Max) değerini giriniz")
+        # t-Closeness Aralığı
+        self.input_t_min = QLineEdit()
+        self.input_t_min.setPlaceholderText("t (Min) değerini giriniz")
+        self.input_t_max = QLineEdit()
+        self.input_t_max.setPlaceholderText("t (Max) değerini giriniz")
+
         # k-anonimlik metrik değeri
         self.input_k = QLineEdit()
         self.input_k.setPlaceholderText("k-Anonimlik değerini giriniz")
@@ -72,9 +90,23 @@ class UI(QMainWindow):
         input_layout.addWidget(self.input_k)
         input_layout.addWidget(self.input_l)
         input_layout.addWidget(self.input_t)
+     
+        
+
+        # PSO için gerekli metrik aralıkları 
+        input_layout.addWidget(QLabel("k-anonimlik Aralığı (Min-Max):"))
+        input_layout.addWidget(self.input_k_min)
+        input_layout.addWidget(self.input_k_max)
+
+        input_layout.addWidget(QLabel("l- Diversity Aralığını (Min-Max):"))
+        input_layout.addWidget(self.input_l_min)
+        input_layout.addWidget(self.input_l_max)
+
+        input_layout.addWidget(QLabel("t Aralığı (Min-Max):"))
+        input_layout.addWidget(self.input_t_min)
+        input_layout.addWidget(self.input_t_max)
         # Onay butonu
         input_layout.addWidget(self.submit_button) 
-
 
         # PSO sonuçlarını göstermek için bir metin alanı
         self.pso_results_label = QLabel("PSO ile Optimizasyon Sonuçları\n")
@@ -91,9 +123,11 @@ class UI(QMainWindow):
         value_k = self.input_k.text().split(',')
         value_l = self.input_l.text().split(',')
         value_t = self.input_t.text().split(',')
-        
 
-        self.callback(value_k,value_l,value_t)
+        k_range = [int(self.input_k_min.text()), int(self.input_k_max.text())]
+        l_range = [int(self.input_l_min.text()), int(self.input_l_max.text())]
+        t_range = [float(self.input_t_min.text()), float(self.input_t_max.text())]
+        self.callback(value_k,value_l,value_t,k_range,l_range,t_range)
 
     def show_fayda_risk(self,visualizer):
         #Fayda-Risk analizi grafiğini göster.

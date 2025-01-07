@@ -20,7 +20,7 @@ class Main:
         self.ui.show()
         sys.exit(self.app.exec_())
 
-    def main(self,value_k,value_l, value_t):
+    def main(self,value_k,value_l, value_t,k_range,l_range,t_range): # PSOEngine'i oluştururken aralıkları gönderiyoruz.
         start = time.time()    
         # PyQt uygulamasını başlatıyoruz.
         data_path = "examples/data/adult_1000.csv"
@@ -30,7 +30,7 @@ class Main:
         identifiers = ["race"]  # "race" sütunu identifiers olarak tanımlandı
         quasi_identifiers = ["age", "education", "marital-status", "occupation", "sex", "native-country"]
         sensitive_attribute = "salary"
-
+        # Optimizasyon için gerekli öznitelikleri ve dosya yolunu gönderiyoruz.
         self.pso_engine = PSOEngine(
             data_path=data_path,
             hierarchy_folder=hierarchy_folder,
@@ -146,7 +146,11 @@ class Main:
             l_values=l_values,
             t_values=t_values
         )
-        best_result = self.pso_engine.optimize()
+
+        
+
+
+        best_result = self.pso_engine.optimize(k_range, l_range, t_range)
         print("\nPSO ile bulunan en iyi sonuç:")
         print(f" - k: {best_result['k']}")
         print(f" - l: {best_result['l']}")

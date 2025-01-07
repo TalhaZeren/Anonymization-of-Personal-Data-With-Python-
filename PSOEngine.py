@@ -42,15 +42,10 @@ class PSOEngine:
             print(f"Hata oluştu: {e}")
             return np.inf  # Eğer bir hata oluşursa çok kötü bir skor döndür
 
-    def optimize(self):
+    def optimize(self,k_range,l_range,t_range):
         """
         PSO algoritmasını çalıştırarak en iyi sonucu bul.
         """
-        # K, L, T için optimize edilecek aralıklar
-        k_range = [5, 50]  # k değeri için minimum ve maksimum
-        l_range = [2, 10]  # l değeri için minimum ve maksimum
-        t_range = [0.1, 1.0]  # t değeri için minimum ve maksimum
-
         # Alt ve üst sınırları belirle
         lower_bounds = [k_range[0], l_range[0], t_range[0]]
         upper_bounds = [k_range[1], l_range[1], t_range[1]]
