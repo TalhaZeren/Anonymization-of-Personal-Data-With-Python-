@@ -18,3 +18,13 @@ the anonymization, data loss analyses were conducted, and suppression
 optimal result for anonymization. The analysis results were then visualized with
 graphs.This study aimed to offer an effective method to ensure anonymity in data
 privacy-focused projects and contributed to research in this field.
+
+
+
+https://github.com/user-attachments/assets/1199b91c-5d42-4c79-9b3f-3b539a1892c2
+
+
+
+<img width="375" height="370" alt="image" src="https://github.com/user-attachments/assets/1388ab86-3280-4a02-bb2b-f1497b8780d6" />
+
+
